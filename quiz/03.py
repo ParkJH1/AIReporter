@@ -12,9 +12,9 @@ y = []
 
 for i in range(len(titles)):
     sequence = tokenizer.texts_to_sequences([titles[i]])[0]
-    for i in range(1, len(sequence)):
-        x.append(sequence[:i])
-        y.append(sequence[i])
+    for j in range(1, len(sequence)):
+        x.append(sequence[:j])
+        y.append(sequence[j])
 
 print(x)
 print(y)
